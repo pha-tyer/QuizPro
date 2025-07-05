@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exam Page | QuizPro</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/script.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <button id="toggle-dark-mode">🌙 Toggle Dark Mode</button>
+
+  <div class="container">
+    <h1>Exam Page</h1>
+    <h2 id="exam-greeting"></h2>
+
+    <div id="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <p id="timer" style="font-weight: bold; color: #d9534f;">Time Left: 10s</p>
+    <p id="question"></p>
+    <div id="answers"></div>
+
+    <button id="next" onclick="nextQuestion()">Next</button>
+    <button id="restart" style="display: none;" onclick="restartQuiz()">Try Again</button>
+ <button id="download-certificate" style="display: none;">Download Certificate</button>
+ </div>
+</body>
+</html>
